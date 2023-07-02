@@ -2,6 +2,7 @@ import requests
 from PIL import Image
 import streamlit as st
 from streamlit_lottie import st_lottie
+from typing import Union, Optional, Literal
 
 st.set_page_config(page_title="Michael Xu's Webpage",page_icon=":tada:",layout="wide")
 
@@ -18,6 +19,7 @@ def local_css(file_name):
 local_css("style/style.css")
 
 lottie_coding=load_lottieurl("https://assets2.lottiefiles.com/private_files/lf30_cmd8kh2q.json")
+
 img_contact_form=Image.open("assets/0001.png")
 img_lottie_animation=Image.open("assets/0002.png")
 
